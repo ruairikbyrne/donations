@@ -14,7 +14,7 @@ const server = Hapi.server({
   port: process.env.PORT || 3000,
 });
 
-const result = dotenv.config();
+const result = dotenv.config({ silent: true });
 if (result.error) {
   console.log(result.error.message);
   process.exit(1);
