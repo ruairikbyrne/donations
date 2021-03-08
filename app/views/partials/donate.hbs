@@ -17,6 +17,19 @@
                 </div>
             </div>
             <div class=" uk-width-1-2@m">
+                <div class="uk-margin uk-text-left">
+                    <div class="uk-form-label">Select Candidate</div>
+                    <div class="uk-form-controls ">
+                        {{#each candidates }}
+                            <label>
+                                <input class="uk-radio" type="radio" name="candidate" value="{{lastName}},{{firstName}}" /> {{lastName}},
+                                {{firstName}}
+                            </label>
+                            <br/>
+                        {{/each}}
+                    </div>
+                </div>
+            <div class=" uk-width-1-2@m">
                 <div class="uk-margin">
                     <button class="submit uk-button uk-button-primary uk-button-large uk-width-1-1">Donate</button>
                 </div>

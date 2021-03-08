@@ -4,9 +4,10 @@
             Donations to Date
         </caption>
         <thead>
-        <th>Amount</th>
-        <th>Method donated</th>
-        <th>Donor</th>
+            <th>Amount</th>
+            <th>Method donated</th>
+            <th>Donor</th>
+            <th>Candidate</th>
         </thead>
         <tbody class="uk-text-left">
         {{#each donations}}
@@ -14,6 +15,7 @@
                 <td>{{amount}}</td>
                 <td>{{method}}</td>
                 <td>{{donor.firstName}} {{donor.lastName}}</td>
+                <td>{{candidate.lastName}}, {{candidate.firstName}}</td>
             </tr>
         {{/each}}
         </tbody>

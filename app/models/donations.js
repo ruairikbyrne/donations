@@ -10,6 +10,10 @@ const donationSchema = new Schema({
     type: Schema.Types.ObjectId,
     ref: "User",
   },
+  candidate: {
+    type: Schema.Types.ObjectId,
+    ref: "Candidate",
+  },
 });
 
 module.exports = Mongoose.model("Donation", donationSchema);
